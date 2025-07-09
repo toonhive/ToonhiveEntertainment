@@ -128,22 +128,20 @@
                                                           <h2 style="font-size: 1.8rem; font-weight: 800; margin-top: 0.5em;">
                                                    We're here to help you thrive!
                                                  </h2>
-                                                         <form
-                                                         action="https://formspree.io/f/mgvyjder"
-                                                           method="POST"
-                                                           >
-					
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+                                                        <form
+  action="https://formspree.io/f/mgvyjder"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  
+  <!-- Optional: Add a thank-you redirect -->
+  <input type="hidden" name="_redirect" value="https://toonhive.com/thank-you.html">
+  
+  <button type="submit">Send Message</button>
+</form>
+
 
 						</div>
 					</section>
