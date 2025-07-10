@@ -1,132 +1,214 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Toonhive</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToonHive Outsourcing</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     html {
       scroll-behavior: smooth;
     }
     body {
-      background-color: #0e1628;
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e1628;
+      color: white;
     }
-    .section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #0b1320;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #22c55e;
+    }
+
+    /* Main section styles */
+    section {
+      padding: 80px 20px;
       text-align: center;
     }
-    h2 {
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2.section-title {
       font-size: 2.2rem;
       font-weight: bold;
-      color: white;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
-    h3 {
-      color: #22c55e;
+
+    .section-subtitle {
       font-size: 1.8rem;
+      color: #22c55e;
     }
-    p {
-      color: #d1d5db;
+
+    .section-text {
       font-size: 1.3rem;
-      line-height: 1.6;
+      color: #d1d5db;
     }
-    .service-grid {
+
+    .service-box {
+      flex: 1 1 250px;
+      max-width: 250px;
+    }
+
+    .services-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
     }
-    .service-box {
-      flex: 1 1 280px;
-      max-width: 250px;
-    }
-    .form-input {
+
+    /* Contact form */
+    form input,
+    form textarea {
       width: 100%;
       padding: 10px;
-      margin-bottom: 10px;
-      font-size: 1rem;
+      margin: 10px 0;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
     }
-    .form-btn {
+
+    form input[type="submit"] {
       background-color: #22c55e;
       color: white;
-      font-size: 1.1rem;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
+      font-weight: bold;
       cursor: pointer;
     }
-    .form-btn:hover {
-      background-color: #16a34a;
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <!-- HOME -->
-  <section class="section" id="top">
-    <h2>TRANSFORM YOUR VISION</h2>
-    <p>
-      At <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">TOONHIVE OUTSOURCING</span>, we are industry experts committed to delivering world-class creative and technical services across the entire production pipeline. Our specialists bring deep experience from mobile games, console development, cinematic animation, and interactive applications. We offer a wide range of services including 2D animations, 3D animations, modeling, texturing, rigging, lighting, rendering, and game asset integration—tailored to meet the needs of studios and developers worldwide.
-    </p>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="images/your-logo.png" alt="ToonHive Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#top" class="active">HOME</a></li>
+        <li><a href="#OUR-SERVICES">OUR-SERVICES</a></li>
+        <li><a href="#about">ABOUT-US</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="top">
+    <div class="container">
+      <h2 class="section-title">TRANSFORM YOUR VISION</h2>
+      <p class="section-text">
+        At <span style="color: #38bdf8; font-weight: bold;">TOONHIVE OUTSOURCING</span>, we are industry experts committed to delivering world-class creative and technical services across the entire production pipeline. We offer services for mobile games, console development, cinematic animation, and interactive applications.
+      </p>
+    </div>
   </section>
 
   <!-- OUR SERVICES -->
-  <section class="section" id="OUR-SERVICES">
-    <h2>OUR-SERVICES</h2>
-    <div class="service-grid">
-      <div class="service-box">
-        <h3>2D Animations</h3>
-        <p>Hand-drawn and rig-based 2D animations tailored for mobile games and stylized art.</p>
-      </div>
-      <div class="service-box">
-        <h3>3D Animations</h3>
-        <p>Cinematic-quality character and creature animations built for console and PC games.</p>
-      </div>
-      <div class="service-box">
-        <h3>Unity & Unreal</h3>
-        <p>Full development support from gameplay programming to visual scripting and FX.</p>
-      </div>
-      <div class="service-box">
-        <h3>Data Analysis</h3>
-        <p>Metrics and performance insights to optimize user experience and monetization.</p>
+  <section id="OUR-SERVICES">
+    <div class="container">
+      <h2 class="section-title">OUR-SERVICES</h2>
+      <div class="services-grid">
+        <div class="service-box">
+          <h3 class="section-subtitle">2D Animations</h3>
+          <p class="section-text">Hand-drawn and rig-based 2D animations tailored for mobile games and stylized art.</p>
+        </div>
+        <div class="service-box">
+          <h3 class="section-subtitle">3D Animations</h3>
+          <p class="section-text">Cinematic-quality character and creature animations built for console and PC games.</p>
+        </div>
+        <div class="service-box">
+          <h3 class="section-subtitle">Unity & Unreal</h3>
+          <p class="section-text">Full development support from gameplay programming to visual scripting and FX.</p>
+        </div>
+        <div class="service-box">
+          <h3 class="section-subtitle">Data Analysis</h3>
+          <p class="section-text">Metrics and performance insights to optimize user experience and monetization.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT US -->
-  <section class="section" id="about">
-    <h2>ABOUT-US</h2>
-    <p style="color: #22c55e; font-size: 1.5rem; font-weight: bold;">YOUR ANIMATION PARTNER</p>
-    <h3 style="color: white; font-size: 2rem; font-weight: bold;">Experts in gaming and 3D creation</h3>
-    <p>
-      At <span style="color: #38bdf8; font-weight: bold;">TOONHIVE OUTSOURCING</span>, we bring your ideas to life with precision and creativity. As specialists in high-quality animation, stylized 3D assets, and engaging mobile game development, we empower studios and creators around the world to push boundaries.
-    </p>
-    <p>
-      From real-time <span style="color: #38bdf8; font-weight: bold;">UNITY/UNREAL ENGINE PROGRAMMING</span> to full asset implementation—including 2D, 3D, animations, and game-ready assets—our pipeline is optimized for efficiency and flexibility.
-    </p>
-    <p>
-      We also provide smart, data-driven insights to help you refine user experience and performance. With a passion for detail and dedication to quality, ToonHive ensures your project stands out in a crowded digital world.
-    </p>
-    <p style="font-weight: bold; color: white;">Partner with us for reliable, scalable, and world-class creative production.</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">ABOUT-US</h2>
+      <p class="section-subtitle">YOUR ANIMATION PARTNER</p>
+      <h3 style="font-size: 1.8rem; font-weight: bold;">Experts in gaming and 3D creation</h3>
+      <p class="section-text">
+        We empower studios and creators with high-quality animation, stylized 3D assets, and mobile game development. From real-time <span style="color: #38bdf8;">Unreal/Unity</span> programming to data-driven insights, we help your projects stand out.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title">PORTFOLIO</h2>
+      <p class="section-text">Showcase of our best 2D, 3D, cinematic, and game development work. (Coming Soon)</p>
+    </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p style="color: #a7f3d0; font-size: 1.1rem;">We're here to help you thrive!</p>
-    <form action="https://formspree.io/f/mgvyjder" method="POST" style="max-width: 600px; margin: auto;">
-      <input class="form-input" type="text" name="name" placeholder="Name" required />
-      <input class="form-input" type="email" name="email" placeholder="Email" required />
-      <textarea class="form-input" name="message" placeholder="Message" rows="4" required></textarea>
-      <input type="hidden" name="_redirect" value="https://toonhive.com/thank-you.html" />
-      <button class="form-btn" type="submit">Send Message</button>
-    </form>
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">CONTACT</h2>
+      <h3 style="font-size: 1.4rem; font-weight: 600; color: #a7f3d0;">We're here to help you thrive!</h3>
+      <form action="https://formspree.io/f/mgvyjder" method="POST" style="max-width: 600px; margin: auto;">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
   </section>
+
 </body>
 </html>
