@@ -1,195 +1,175 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Toonhive</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+  <title>Toonhive</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e1628;
+      color: white;
+      margin: 0;
+    }
+    h2 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: white;
+    }
+    h3 {
+      font-size: 1.8rem;
+      color: #22c55e;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .service-box {
+      flex: 1 1 280px;
+      max-width: 250px;
+    }
+    .icon span {
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
+  <!-- Header -->
+  <div id="header">
+    <div class="top">
+      <!-- Logo -->
+      <div id="logo">
+        <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+        <h1 id="title">TOONHIVE</h1>
+        <p>IDEAS BROUGHT TO LIFE</p>
+      </div>
 
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">TOONHIVE</h1>
-							<p>IDEAS BROUGHT TO LIFE</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">HOME</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">OUR-SERVICES</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">ABOUT-US</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">PORTFOLIO</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">CONTACT</span></a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-
-				</div>
-
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-<!-- HOME SECTION -->
-<section style="background-color: #0e1628; padding: 120px 20px; text-align: center;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="font-size: 2.2rem; font-weight: bold; color: white; margin-bottom: 20px;">
-      TRANSFORM YOUR VISION
-    </h2>
-
-    <p style="color: #9ca3af; font-size: 1.3rem; line-height: 1.6; margin-bottom: 12px;">
-      At <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">TOONHIVE OUTSOURCING</span>, we are industry experts committed to delivering world-class creative and technical services across the entire production pipeline. Our specialists bring deep experience from mobile games, console development, cinematic animation, and interactive applications.We offer a wide range of services including 2D animations, 3D animations, modeling, texturing, rigging, lighting, rendering, and game asset integration-tailored to meet the needs of studios and developers worldwide.
-    </p>
-
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#top" id="top-link"><span class="icon solid fa-home"><span>HOME</span></span></a></li>
+          <li><a href="#OUR-SERVICES"><span class="icon solid fa-th"><span>OUR-SERVICES</span></span></a></li>
+          <li><a href="#about"><span class="icon solid fa-user"><span>ABOUT-US</span></span></a></li>
+          <li><a href="#portfolio"><span class="icon solid fa-briefcase"><span>PORTFOLIO</span></span></a></li>
+          <li><a href="#contact"><span class="icon solid fa-envelope"><span>CONTACT</span></span></a></li>
+        </ul>
+      </nav>
     </div>
-</section>
 
-<!-- OUR-SERVICES SECTION -->
-<section id="OUR-SERVICES" style="background-color: #0e1628; padding: 60px 20px;">
-  <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
-    <h2 style="font-size: 2.2rem; font-weight: bold; margin-bottom: 40px; color: white;">
-      OUR-SERVICES
-    </h2>
-
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-      <div style="flex: 1 1 280px; max-width: 250px;">
-        <h3 style="color: #22c55e; font-size: 1.8rem;">2D Animations</h3>
-        <p style="font-size: 1.3rem; color: #d1d5db;">
-          Hand-drawn and rig-based 2D animations tailored for mobile games and stylized art.
-        </p>
-      </div>
-      <div style="flex: 1 1 280px; max-width: 250px;">
-        <h3 style="color: #22c55e; font-size: 1.8rem;">3D Animations</h3>
-        <p style="font-size: 1.3rem; color: #d1d5db;">
-          Cinematic-quality character and creature animations built for console and PC games.
-        </p>
-      </div>
-      <div style="flex: 1 1 280px; max-width: 250px;">
-        <h3 style="color: #22c55e; font-size: 1.8rem;">Unity & Unreal</h3>
-        <p style="font-size: 1.3rem; color: #d1d5db;">
-          Full development support from gameplay programming to visual scripting and FX.
-        </p>
-      </div>
-      <div style="flex: 1 1 280px; max-width: 250px;">
-        <h3 style="color: #22c55e; font-size: 1.8rem;">Data Analysis</h3>
-        <p style="font-size: 1.3rem; color: #d1d5db;">
-          Metrics and performance insights to optimize user experience and monetization.
-        </p>
-      </div>
+    <div class="bottom">
+      <!-- Social Icons -->
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
     </div>
   </div>
-</section>
 
+  <!-- Main -->
+  <div id="main">
 
-<!-- ABOUT-US SECTION -->
+    <!-- HOME SECTION -->
+    <section id="top" style="background-color: #0e1628; padding: 120px 20px; text-align: center;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2>TRANSFORM YOUR VISION</h2>
+        <p>
+          At <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">TOONHIVE OUTSOURCING</span>, we are industry experts committed to delivering world-class creative and technical services across the entire production pipeline. Our specialists bring deep experience from mobile games, console development, cinematic animation, and interactive applications. We offer a wide range of services including 2D animations, 3D animations, modeling, texturing, rigging, lighting, rendering, and game asset integration—tailored to meet the needs of studios and developers worldwide.
+        </p>
+      </div>
+    </section>
 
-<section style="background-color: #0e1628; padding: 60px 20px;">
-  <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
-    <h2 style="font-size: 2.2rem; font-weight: bold; margin-bottom: 40px; color: white;">
-      ABOUT-US
-    </h2>
-				
-<section id="about" style="background-color: #0f172a; color: white; padding: 60px 20px;">
-  <div style="max-width: 900px; margin: auto;">
-    <p style="color: #22c55e; font-weight: bold; text-transform: uppercase; font-size: 1.5rem;">
-      Your Animation Partner
-    </p>
+    <!-- OUR-SERVICES SECTION -->
+    <section id="OUR-SERVICES" class="container">
+      <h2>OUR-SERVICES</h2>
+      <div class="services-grid">
+        <div class="service-box">
+          <h3>2D Animations</h3>
+          <p>Hand-drawn and rig-based 2D animations tailored for mobile games and stylized art.</p>
+        </div>
+        <div class="service-box">
+          <h3>3D Animations</h3>
+          <p>Cinematic-quality character and creature animations built for console and PC games.</p>
+        </div>
+        <div class="service-box">
+          <h3>Unity & Unreal</h3>
+          <p>Full development support from gameplay programming to visual scripting and FX.</p>
+        </div>
+        <div class="service-box">
+          <h3>Data Analysis</h3>
+          <p>Metrics and performance insights to optimize user experience and monetization.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2 style="font-size: 2rem; font-weight: 800; margin: 10px 0 20px;">
-      Experts in gaming and 3D creation
-    </h2>
+    <!-- ABOUT-US SECTION -->
+    <section id="about" class="container" style="background-color: #0f172a;">
+      <h2>ABOUT-US</h2>
+      <p style="color: #22c55e; font-weight: bold; text-transform: uppercase; font-size: 1.5rem;">
+        Your Animation Partner
+      </p>
+      <h2 style="font-size: 2rem; font-weight: 800; margin: 10px 0 20px;">
+        Experts in gaming and 3D creation
+      </h2>
+      <p>
+        At <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">TOONHIVE OUTSOURCING</span>, we bring your ideas to life with precision and creativity. As specialists in high-quality animation, stylized 3D assets, and engaging mobile game development, we empower studios and creators around the world to push boundaries.
+      </p>
+      <p>
+        From real-time <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">Unity/Unreal Engine programming to full Unity/Unreal Engine asset implementation</span>, including 2D, 3D, animations, and game-ready assets—our pipeline is optimized for efficiency and flexibility. Whether you need end-to-end development or specific production support, we ensure seamless integration and delivery across platforms.
+      </p>
+      <p>
+        We also provide smart, data-driven insights to help you refine user experience and performance. With a passion for detail and dedication to quality, ToonHive ensures your project stands out in a crowded digital world.
+      </p>
+      <p style="font-weight: 600; color: #f9fafb;">
+        Partner with us for reliable, scalable, and world-class creative production.
+      </p>
+    </section>
 
-    <p style="color: #d1d5db; line-height: 1.3; margin-bottom: 20px;">
-  At <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">TOONHIVE OUTSOURCING</span>, we bring your ideas to life with precision and creativity. As specialists in high-quality animation, stylized 3D assets, and engaging mobile game development, we empower studios and creators around the world to push boundaries.
-    </p>
- 
-From real-time <span style="color: #38bdf8; font-weight: bold; text-transform: uppercase;">UNITY/Unreal Engine programming to full UNITY/UNREAL ENGINE ASSET IMPLEMENTATION</span>, -including 2D, 3D, animations, and game-ready assets—our pipeline is optimized for efficiency and flexibility. Whether you need end-to-end development or specific production support, we ensure seamless integration and delivery across platforms.
-    </p>
-
-
-    <p style="color: #d1d5db; line-height: 1.3; margin-bottom: 20px;">
-      We also provide smart, data-driven insights to help you refine user experience and performance. With a passion for detail and dedication to quality, ToonHive ensures your project stands out in a crowded digital world.
-    </p>
-
-    <p style="font-weight: 600; color: #f9fafb;">
-      Partner with us for reliable, scalable, and world-class creative production.
-    </p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <h3>We're here to help you thrive!</h3>
+      <form action="https://formspree.io/f/mgvyjder" method="POST">
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" style="width: 100%; margin-bottom: 10px; padding: 10px;" />
+          <input type="email" name="email" placeholder="Email" style="width: 100%; margin-bottom: 10px; padding: 10px;" />
+          <textarea name="message" placeholder="Message" style="width: 100%; margin-bottom: 10px; padding: 10px;"></textarea>
+          <input type="hidden" name="_redirect" value="https://toonhive.com/thank-you.html">
+          <input type="submit" value="Send Message" style="padding: 10px 20px; background: #22c55e; color: white; border: none; cursor: pointer;" />
+        </div>
+      </form>
+    </section>
   </div>
-</section>
-	
 
-	
-<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
-                                                          <h2 style="font-size: 1.8rem; font-weight: 800; margin-top: 0.5em;">
-                                                   We're here to help you thrive!
-                                                 </h2>
-                                                        <form
-                                                   action="https://formspree.io/f/mgvyjder"
-                                                   method="POST"
-                                                       >
-                                                  <div class="row">
-					<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                                        			<div class="col-12">
-		             	<textarea name="message" placeholder="Message"></textarea>
-									</div>
-  
-                                            <!-- Optional: Add a thank-you redirect -->
-                                           <input type="hidden" name="_redirect" value="https://toonhive.com/thank-you.html">
-  
-                                                               <div class="col-12">
-						<input type="submit" value="Send Message" />
-									</div>
-                                           </form>
-
-
-						</div>
-					</section>
-
-			</div>
-
-		
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
