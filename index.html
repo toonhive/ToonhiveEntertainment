@@ -1,29 +1,144 @@
-<section id="services" style="background: #f9f9f9; padding: 60px 20px;">
-  <div class="container">
-    <h2 style="text-align: center; font-size: 2rem; font-weight: bold;">Expert animation and game development</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+/* ====== DARK MODE BASE ====== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111827;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
 
-      <div style="background: white; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img src="images/animation.jpg" style="width: 100%; border-radius: 6px;" alt="Animation Services">
-        <h3 style="margin-top: 15px;">Animation Services</h3>
-        <p>Bring your characters to life with our expert animation.</p>
-      </div>
+/* ====== HEADERS & TEXT ====== */
+h1, h2, h3, h4, h5 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 
-      <div style="background: white; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img src="images/3d-assets.jpg" style="width: 100%; border-radius: 6px;" alt="3D Asset Creation">
-        <h3 style="margin-top: 15px;">3D Asset Creation</h3>
-        <p>Enhance your projects with high-quality 3D assets.</p>
-      </div>
+p {
+  color: #d1d5db;
+}
 
-      <div style="background: white; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img src="images/unreal.jpg" style="width: 100%; border-radius: 6px;" alt="Programming Support">
-        <h3 style="margin-top: 15px;">Unity & Unreal Support</h3>
-        <p>Expert programming services for your games and apps.</p>
-      </div>
+/* ====== NAVIGATION ====== */
+#header {
+  background-color: #1f2937;
+  border-bottom: 1px solid #374151;
+  padding: 15px 40px;
+}
 
-    </div>
-  </div>
-</section>
+#logo h1 {
+  color: #22c55e;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+#nav ul li a:hover,
+#nav ul li a.active {
+  color: #22c55e;
+}
+
+#nav ul li a.active::after,
+#nav ul li a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #22c55e;
+  bottom: 0;
+  left: 0;
+}
+
+/* ====== BUTTONS ====== */
+.button, .contact-button, input[type="submit"] {
+  background-color: #22c55e;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.button:hover,
+.contact-button:hover,
+input[type="submit"]:hover {
+  background-color: #16a34a;
+}
+
+/* ====== CARDS ====== */
+.card {
+  background-color: #1f2937;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #22c55e;
+}
+
+.card p {
+  color: #d1d5db;
+}
+
+/* ====== SECTIONS ====== */
+section {
+  padding: 60px 20px;
+}
+
+section:nth-child(even) {
+  background-color: #1a1a2e;
+}
+
+/* ====== CONTACT FORM ====== */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #9ca3af;
+}
+
+form label {
+  color: #e5e7eb;
+}
+
+/* ====== FOOTER / SMALL TEXT ====== */
+footer, .footer-text {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+}
+
 	
 
 				<!-- Contact -->
